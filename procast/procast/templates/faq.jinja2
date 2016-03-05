@@ -1,0 +1,130 @@
+{% extends "skeleton.jinja2" %}
+
+    {% block content -%}
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-text">
+                        <span class="name">FAQ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- FAQ Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Frequently Asked Questions</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2" role="tabpanel">
+                    <h3><a href="#service-overview" data-toggle="collapse">How does your service work?</a></h3>
+                    <div class="collapse" id="service-overview">
+                        <p>The short answer is that we work with you to select appropriate recording gear (mic and
+                            headphones). We help you test and ensure they're working. We will then schedule a recording
+                            time that works for everyone. We'll record your podcast, then mix and master it. Once you
+                            approve of the final result, we will syndicate it to all of the major podcast syndication
+                            services.</p>
+                    </div>
+
+                    <h3><a href="#remote-recording" data-toggle="collapse">Where do the recordings take place?</a></h3>
+                    <div class="collapse" id="remote-recording">
+                        <p>Your place, of course! Well, wherever you'd like to record. We record over the Internet, so
+                            you can be anywhere that is convenient for you.
+                        </p>
+                    </div>
+
+                    <h3><a href="#guests" data-toggle="collapse">Can I have guests?</a></h3>
+                    <div class="collapse" id="guests">
+                        <p>Most definitely! Our technology stack allows us to record anyone from anywhere there is a
+                            reliable Internet connection. Not only that, but you and your guests are recorded onto
+                            separate tracks so we have full control during the mixing &amp; mastering process.
+                        </p>
+                        <p>Technology!
+                        </p>
+                    </div>
+
+                    <h3><a href="#why-use-us" data-toggle="collapse">Why should I use your service?</a></h3>
+                    <div class="collapse" id="why-use-us">
+                        <p>We recognize that anyone can record, produce and syndicate their own podcast these days. It's
+                            not something that requires special training, and it can be done for a very low cost. Lots
+                            of podcasts are made this way: someone buys a decent USB microphone, starts recording, and
+                            not long after, they have a podcast.
+                        </p>
+                        <p>Not everyone wants to handle all the technical details themselves. Maybe you love to talk
+                            about your passion but don't love everything involved with mixing and mastering. Maybe you
+                            have a sizable audience and are thinking about &quot;getting serious&quot; and growing your
+                            audience even more. Maybe you just plain don't want to do anything but host your podcast.
+                        </p>
+                        <p>Whatever the reason, we're here to help! We love all of the technical details and would be
+                            more than happy to handle them for you, leaving you to do what you love most.
+                        </p>
+                    </div>
+
+                    <h3><a href="#what-about-cost" data-toggle="collapse">How much does your service cost?</a></h3>
+                    <div class="collapse" id="what-about-cost">
+                        <p>The standard answer is: it depends. We are dramatically cheaper than paying for a studio
+                            session. We are not as cheap as free, but for what we offer, we're very reasonably priced.
+                        </p>
+                        <p>We have a limited time offer to record your first episode for free. If you like what you
+                            hear, you have the option to continue with us for future episodes. If not, thank you for
+                            giving us a chance!
+                        </p>
+                        <p>Sound good? <a href="{{ request.route_url('home') }}#contact">Let's get started!</a>
+                        </p>
+                    </div>
+
+                    <h3><a href="#technical-details" data-toggle="collapse">What gear do you use and recommend?</a></h3>
+                    <div class="collapse" id="technical-details">
+                        <h4>Mics &amp; Recording Interfaces</h4>
+                        <p>As for microphones, that answer will vary wildly. If you're willing to spend a little more,
+                            the <a href="http://amzn.com/B000SOYOTQ" target="_blank">Heil PR40</a>, combined with the <a
+                                    href="http://amzn.com/B005OZE9SA" target="_blank">Focusrite Scarlett 2i2</a> work
+                            wonders together.
+                        </p>
+                        <p>If you want to keep it low cost but still high quality, there are a number of USB microphones
+                            that would work just fine. <a href="http://www.bluemic.com" target="_blank">Blue</a> makes a
+                            number of excellent USB mics.
+                        </p>
+                        <p>You can use your laptop's built-in microphone, or a cheaper alternative to what we recommend,
+                            if you really want to. Just understand that no amount of post-production can make it sound
+                            like a more expensive microphone. We'll work with what you give us as long as we all agree
+                            on that. <i class="fa fa-smile-o"></i>
+                        </p>
+
+                        <h4>Our Technology Stack</h4>
+                        <p>In addition to being audiophiles, we are also open source enthusiasts! We use <a
+                            href="http://jackaudio.org/" target="_blank">JACK audio</a>, along with <a
+                                href="http://ardour.org" target="_blank">Ardour</a> for all of our work. We like it so
+                            much that we also contribute back to the project financially.
+                        </p>
+                    </div>
+
+                    <h3><a href="#quality" data-toggle="collapse">What kind of quality can I expect?</a></h3>
+                    <div class="collapse" id="quality">
+                        <p>Surprisingly great! There are a number of factors that influence a recording's quality, of
+                            course, but we like to think we've got those handled. The limiting factor to a high quality
+                            final result will be more about your microphone, microphone placement, and recording
+                            interface. We are able to record in near-lossless quality with whatever source we've got to
+                            work with.
+                        </p>
+                    </div>
+
+                    <h3><a href="#get-started" data-toggle="collapse">How do I get started?</a></h3>
+                    <div class="collapse" id="get-started">
+                        <p>Easy! Head over to our <a href="{{ request.route_url('home') }}#contact">contact form</a> and
+                            let us know. We'll reach out to you to discuss your podcast and, when you're ready, schedule
+                            a recording time. We'll work with you from start to finish.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {%- endblock %}
